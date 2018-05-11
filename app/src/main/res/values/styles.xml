@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingBottom">@dimen/padding_edittext_vertical</item>
+        <item name="android:paddingEnd">@dimen/padding_edit_text_horizontal</item>
+        <item name="android:paddingStart">@dimen/padding_edit_text_horizontal</item>
+        <item name="android:paddingTop">@dimen/padding_edittext_vertical</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/pureWhite</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="blockTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/pureWhite</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="tabTextStyle">
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+</resources>

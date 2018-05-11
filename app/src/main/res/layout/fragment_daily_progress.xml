@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/liveStepHistory"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_daily_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="4582"
+            android:textAllCaps="true"
+            android:textSize="@dimen/very_very_large_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/seperator"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/tv_daily_steps_target"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            android:text="1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/daily_progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_margin="@dimen/big_margin"
+            android:progressTint="@color/colorGradientStart"
+            android:progressBackgroundTint="@color/progress_bar_background"
+            android:max="100"
+            android:progress="65"
+            android:indeterminate="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_height" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Progress: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/progress_perecentage"
+                android:textStyle="bold"
+                android:text="46%"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/big_margin"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Time Left:"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/daily_time_left"
+            tools:text="3hr 13min 45sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

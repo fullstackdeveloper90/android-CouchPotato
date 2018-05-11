@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/very_big_margin"
+    android:layout_marginLeft="@dimen/very_big_margin"
+    android:layout_marginRight="@dimen/very_big_margin"
+    android:layout_marginStart="@dimen/very_big_margin"
+    android:layout_marginTop="@dimen/small_margin"
+    android:layout_marginBottom="@dimen/small_margin"
+    android:background="@drawable/pale_white_rounded_drawable"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_edit_text_horizontal"
+    android:paddingEnd="@dimen/padding_edit_text_horizontal"
+    android:paddingLeft="@dimen/padding_edit_text_horizontal"
+    android:paddingRight="@dimen/padding_edit_text_horizontal"
+    android:paddingStart="@dimen/padding_edit_text_horizontal"
+    android:paddingTop="@dimen/padding_edit_text_horizontal"
+    android:weightSum="100"
+    >
+
+    <TextView
+        android:id="@+id/date_item_record_vh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorDark"
+        tools:text="Aug 6:"/>
+
+    <TextView
+        android:id="@+id/total_steps_item_record_vh"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDark"
+        tools:text="12,234"/>
+
+    <TextView
+        android:id="@+id/message_steps_item_record_vh"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_width="0dp"
+        android:layout_weight="100"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDark"
+        tools:text="10,000 daily goal reached."/>
+
+
+</LinearLayout>

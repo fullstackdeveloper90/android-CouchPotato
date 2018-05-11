@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="top|center"
+    android:layout_marginTop="100dp"
+    android:padding="@dimen/very_big_padding"
+    android:background="@drawable/bg_rounded_gradient"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/subscribe_title"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        tools:text="@string/subscribe_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/subscription_expired_body"/>
+
+
+    <Button
+        android:id="@+id/subscribe_button"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_rounded_white"
+        android:text="Subscribe"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

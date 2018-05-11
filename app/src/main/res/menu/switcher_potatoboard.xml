@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/potato_switcher"
+        android:icon="@drawable/potato_light"
+        android:title="@string/potato"
+        app:showAsAction="always" />
+</menu>

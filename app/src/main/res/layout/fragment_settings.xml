@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_settings_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="12dp"
+            android:text="@string/back"
+            android:textColor="@color/pureWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_settings_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="12dp"
+            android:text="@string/saveStepsToDevice"
+            android:textColor="@color/pureWhite"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="64dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/txt_settings_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="@color/pureWhite"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/input_settings_name" />
+
+            <EditText
+                android:id="@+id/input_settings_name"
+                style="@style/editTextStyle"
+                android:hint="@string/name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_settings_account" />
+
+            <TextView
+                style="@style/editTextStyle"
+                android:id="@+id/text_settings_email"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toEndOf="@id/input_settings_name"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="@id/input_settings_name"
+                app:layout_constraintTop_toBottomOf="@id/input_settings_name"
+                tools:text="Email address" />
+
+            <TextView
+                android:id="@+id/txt_settings_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/change_password"
+                android:textColor="@color/pureWhite"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/input_settings_name"
+                app:layout_constraintTop_toBottomOf="@id/text_settings_email" />
+
+            <TextView
+                android:id="@+id/txt_settings_buddy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="@string/buddy"
+                android:textColor="@color/pureWhite"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/input_settings_buddy_email"
+                app:layout_constraintTop_toBottomOf="@id/txt_settings_change_password" />
+
+            <EditText
+                android:id="@+id/input_settings_buddy_email"
+                style="@style/editTextStyle"
+                android:hint="@string/buddy_email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_settings_buddy" />
+
+            <LinearLayout
+                android:id="@+id/check_settings_notify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/input_settings_buddy_email"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="@id/input_settings_buddy_email"
+                app:layout_constraintTop_toBottomOf="@id/input_settings_buddy_email">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/notify_daily"
+                    android:textColor="@color/pureWhite" />
+
+                <CheckBox
+                    android:id="@+id/check_settings_notify_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColorLink="@color/pureWhite"
+                    app:layout_constraintEnd_toEndOf="@string/buddy_email"
+                    app:layout_constraintTop_toBottomOf="@id/input_settings_buddy_email" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_settings_daily_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/daily_goal"
+                android:textColor="@color/pureWhite"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/input_settings_buddy_email"
+                app:layout_constraintTop_toBottomOf="@id/check_settings_notify" />
+
+            <EditText
+                android:id="@+id/input_settings_daily_goal"
+                style="@style/editTextStyle"
+                android:layout_width="96dp"
+                android:gravity="center"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="@id/txt_settings_daily_goal"
+                app:layout_constraintTop_toBottomOf="@id/txt_settings_daily_goal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/steps"
+                android:textColor="@color/pureWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/input_settings_daily_goal"
+                app:layout_constraintStart_toEndOf="@id/input_settings_daily_goal"
+                app:layout_constraintTop_toTopOf="@id/input_settings_daily_goal" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

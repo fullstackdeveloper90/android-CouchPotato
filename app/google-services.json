@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "150647603321",
+    "firebase_url": "https://couch-potato-7ed9b.firebaseio.com",
+    "project_id": "couch-potato-7ed9b",
+    "storage_bucket": "couch-potato-7ed9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150647603321:android:53fb1b482b0747c1",
+        "android_client_info": {
+          "package_name": "com.thorangs.couchpotato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150647603321-c1jb6jkg8ibp7j8aombeo09klb1b80t5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thorangs.couchpotato",
+            "certificate_hash": "efc85843b16a07b6c05d25d93bfa348096c68666"
+          }
+        },
+        {
+          "client_id": "150647603321-p4s7bb0coh97hbq88t17sibjgfv0k5le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFYS0e8TKAhCZ3w4Xb9-lDoo0xDhFPn84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150647603321-p4s7bb0coh97hbq88t17sibjgfv0k5le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

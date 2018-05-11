@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/blockTextStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/get_free" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/note_refer"
+        android:textColor="@color/pureWhite"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_refer_share"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableTop="@drawable/ic_fb"
+                android:padding="12dp"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                android:textColor="@color/colorDark"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_refer_email"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableTop="@drawable/ic_mail"
+                android:padding="12dp"
+                android:text="@string/email"
+                android:textAllCaps="false"
+                android:textColor="@color/colorDark"
+                android:textSize="12sp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

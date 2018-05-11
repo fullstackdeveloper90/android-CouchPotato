@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center"
+    android:layout_marginTop="100dp"
+    android:background="@drawable/bg_rounded_gradient"
+    android:orientation="vertical"
+    android:padding="@dimen/very_big_padding"
+    >
+
+    <TextView
+        android:id="@+id/logout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="@string/logout_title"/>
+
+    <TextView
+        android:id="@+id/logout_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/logout_message"
+        android:textColor="#fff"/>
+
+
+    <ProgressBar
+        android:id="@+id/logout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    />
+</LinearLayout>

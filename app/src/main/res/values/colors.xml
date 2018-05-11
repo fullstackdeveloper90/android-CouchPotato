@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C66CFF</color>
+    <color name="colorPrimaryDark">#C66CFF</color>
+    <color name="colorAccent">#333</color>
+
+    <color name="colorGradientStart">#C66CFF</color>
+    <color name="colorGradientEnd">#82ADFD</color>
+    <color name="colorDark">#383838</color>
+    <color name="pureWhite">#fff</color>
+    <color name="progress_bar_background">#f2f2f2</color>
+    <color name="paleWhite">#eee</color>
+</resources>

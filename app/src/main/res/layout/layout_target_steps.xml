@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="@dimen/padding_top">
+
+    <TextView
+        android:id="@+id/text_i_will_walk"
+        style="@style/blockTextStyle"
+        android:layout_marginStart="12dp"
+        android:text="@string/i_will_walk"
+        app:layout_constraintStart_toStartOf="@+id/input_target_steps"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_target_steps"
+        style="@style/editTextStyle"
+        android:hint="@string/number_of_steps"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_i_will_walk" />
+
+    <TextView
+        android:id="@+id/text_steps_daily"
+        style="@style/blockTextStyle"
+        android:layout_marginStart="12dp"
+        android:text="@string/steps_daily"
+        app:layout_constraintStart_toStartOf="@id/input_target_steps"
+        app:layout_constraintTop_toBottomOf="@id/input_target_steps" />
+
+    <Button
+        android:id="@+id/btn_confirm_target_steps"
+        style="@style/buttonStyle"
+        android:layout_marginTop="32dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_steps_daily" />
+
+    <ProgressBar
+        android:id="@+id/target_progressbar"
+        android:elevation="2dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_confirm_target_steps"
+        app:layout_constraintEnd_toEndOf="@id/btn_confirm_target_steps"
+        app:layout_constraintStart_toStartOf="@id/btn_confirm_target_steps"
+        app:layout_constraintTop_toTopOf="@id/btn_confirm_target_steps" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/steps_considered"
+        android:textColor="@color/pureWhite"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/btn_confirm_target_steps"
+        app:layout_constraintTop_toBottomOf="@id/btn_confirm_target_steps" />
+</android.support.constraint.ConstraintLayout>

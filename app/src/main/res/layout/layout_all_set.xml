@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/gradient_background"
+    android:paddingTop="@dimen/padding_top">
+
+    <TextView
+        android:id="@+id/block_txt_allset"
+        style="@style/blockTextStyle"
+        android:text="All Set"
+        app:layout_constraintStart_toStartOf="@+id/btn_confirm_all_set"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_desc_all_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxWidth="280dp"
+        android:text="@string/desc_allset"
+        android:textColor="@color/pureWhite"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/btn_confirm_all_set"
+        app:layout_constraintTop_toBottomOf="@id/block_txt_allset" />
+
+    <Button
+        android:id="@+id/btn_confirm_all_set"
+        style="@style/buttonStyle"
+        android:layout_marginTop="24dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_desc_all_set" />
+
+    <ProgressBar
+        android:id="@+id/all_set_progressbar"
+        android:elevation="2dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_confirm_all_set"
+        app:layout_constraintEnd_toEndOf="@id/btn_confirm_all_set"
+        app:layout_constraintStart_toStartOf="@id/btn_confirm_all_set"
+        app:layout_constraintTop_toTopOf="@id/btn_confirm_all_set" />
+
+</android.support.constraint.ConstraintLayout>

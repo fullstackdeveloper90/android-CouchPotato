@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/gradient_background"
+    android:paddingTop="@dimen/padding_top">
+
+    <TextView
+        android:id="@+id/txt_verification_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification Key"
+        android:textColor="@color/pureWhite"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/input_verification_key" />
+
+    <EditText
+        android:id="@+id/input_verification_key"
+        style="@style/editTextStyle"
+        android:hint="Key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_verification_key" />
+
+    <Button
+        android:id="@+id/btn_verification_key"
+        style="@style/buttonStyle"
+        android:layout_marginTop="16dp"
+        android:text="@string/verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_verification_key" />
+
+    <ProgressBar
+        android:id="@+id/progress_key_verify"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:elevation="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_verification_key"
+        app:layout_constraintEnd_toEndOf="@id/btn_verification_key"
+        app:layout_constraintStart_toStartOf="@id/btn_verification_key"
+        app:layout_constraintTop_toTopOf="@id/btn_verification_key" />
+</android.support.constraint.ConstraintLayout>
